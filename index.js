@@ -54,7 +54,6 @@ form.addEventListener("submit", formSubmitHandler);
 
 /* Вопросы не по спринту, заметил, что не работают никакие кнопки по нажатию на энтер, надо добавить обработчик событий по нажатию на эту кнопку?  */
 
-/*  Пытался лайки сделать....что-то не так
 /// Переменные для лайков
 
 let hearts = document.querySelectorAll(".card__heart");
@@ -65,10 +64,11 @@ for (heart of hearts) {
   });
 }
 
-heart.addEventListener("click", function () {
+/* heart.addEventListener("click", function () {
   if (heart.classList.contains("card__heart_condition_active")) {
     likesNumber.textContent--; // Добавить счетчик
   } else {
     likesNumber.textContent++;
   }
-}); */
+});
+ */

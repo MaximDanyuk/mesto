@@ -13,3 +13,24 @@
 .card__heart:active {
   fill: #000;
 }
+
+@media (max-width: 1120px) {
+  .card__heart {
+    width: 19px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 880px) {
+  .card__heart {
+    width: 15px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card__heart {
+    width: 22px;
+    height: 19px;
+  }
+}
