@@ -1,0 +1,9 @@
+.photo-gallery_theme_position {
+  margin-top: 50px;
+}
+
+@media (max-width: 650px) {
+  .photo-gallery_theme_position {
+    margin-top: 36px;
+  }
+}

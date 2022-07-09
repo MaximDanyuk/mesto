@@ -1,0 +1,22 @@
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(23%, 1fr));
+  grid-template-rows: repeat(2, minmax(48%, 1fr));
+  gap: 20px 17px;
+  color: #000;
+  max-width: 100%;
+}
+
+@media (max-width: 880px) {
+  .photo-gallery {
+    gap: 15px 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .photo-gallery {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}

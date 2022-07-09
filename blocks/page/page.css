@@ -1,0 +1,36 @@
+.page {
+  margin: 0 auto;
+  padding: 45px 200px 60px 200px;
+  max-width: 1280px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1020px) {
+  .page {
+    padding: 40px 170px 50px 170px;
+  }
+}
+
+@media (max-width: 880px) {
+  .page {
+    padding: 40px 140px 30px 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 40px 90px 30px 90px;
+  }
+}
+
+@media (max-width: 650px) {
+  .page {
+    padding: 40px 40px 36px 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .page {
+    padding: 28px 19px 36px 19px;
+  }
+}

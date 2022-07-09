@@ -1,0 +1,15 @@
+.footer_theme_position {
+  margin-top: 66px;
+}
+
+@media (max-width: 880px) {
+  .footer_theme_position {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer_theme_position {
+    margin-top: 48px;
+  }
+}

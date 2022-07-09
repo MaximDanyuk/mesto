@@ -1,0 +1,26 @@
+.card__footer {
+  max-width: 100%;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #fff;
+  padding: 25px 15px 25px 21px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1120px) {
+  .card__footer {
+    padding: 15px 7px 15px 10px;
+  }
+}
+
+@media (max-width: 880px) {
+  .card__footer {
+    padding: 11px 11px 8px 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card__footer {
+    padding: 20px 15px 15px 15px;
+  }
+}

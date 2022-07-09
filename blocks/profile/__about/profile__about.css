@@ -1,0 +1,35 @@
+.profile__about {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 5px 0 0 0;
+  padding: 0;
+  max-width: 336px;
+  /*   Защита от переполнения */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media (max-width: 880px) {
+  .profile__about {
+    font-size: 1.45vw;
+    line-height: 1.9vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile__about {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .profile__about {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin: 14px 0 0 0;
+  }
+}
