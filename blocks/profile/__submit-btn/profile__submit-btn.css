@@ -1,4 +1,4 @@
-.profile__submit-btn_action_add {
+.profile__submit-btn {
   max-width: 150px;
   max-height: 50px;
   border: 2px solid #ffffff;
@@ -13,11 +13,11 @@
   transition: 0.5s;
 }
 
-.profile__submit-btn_action_add:hover {
+.profile__submit-btn:hover {
   opacity: 0.6;
 }
 
-.profile__submit-btn_action_add::before {
+.profile__submit-btn::before {
   content: " ";
   background-image: url(../../../../images/mark.svg);
   background-repeat: no-repeat;
@@ -30,14 +30,14 @@
 }
 
 @media (max-width: 1020px) {
-  .profile__submit-btn_action_add {
+  .profile__submit-btn {
     max-width: 100px;
     max-height: 40px;
     padding: 14px 50px;
     margin: 35px 0 35px 0;
   }
 
-  .profile__submit-btn_action_add::before {
+  .profile__submit-btn::before {
     width: 15px;
     height: 15px;
     top: 12px;
@@ -46,14 +46,14 @@
 }
 
 @media (max-width: 650px) {
-  .profile__submit-btn_action_add {
+  .profile__submit-btn {
     max-width: 282px;
     max-height: 50px;
     padding: 20px 134px;
     margin: 35px 0 35px 0;
   }
 
-  .profile__submit-btn_action_add::before {
+  .profile__submit-btn::before {
     width: 15px;
     height: 15px;
     top: 13px;

@@ -1,6 +1,11 @@
 .logo {
   max-width: 142px;
   max-height: 33px;
+  transition: 0.5s;
+}
+
+.logo:hover {
+  opacity: 0.8;
 }
 
 @media (max-width: 650px) {

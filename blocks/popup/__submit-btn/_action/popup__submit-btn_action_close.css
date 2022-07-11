@@ -4,8 +4,6 @@
   width: 25px;
   top: -27px;
   right: -26px;
-  cursor: pointer;
-  transition: 0.5s;
 }
 
 .popup__submit-btn_action_close:hover {
@@ -14,11 +12,9 @@
 
 @media (max-width: 650px) {
   .popup__submit-btn_action_close {
-    position: absolute;
     height: 20px;
     width: 20px;
     top: -35px;
     right: -2px;
-    cursor: pointer;
   }
 }
