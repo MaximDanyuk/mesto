@@ -38,48 +38,16 @@
           <button
             class="profile__submit-btn profile__submit-btn_action_add"
           ></button>
-
-          <div class="popup">
-            <div class="popup__container">
-              <img
-                src="/images/close-icon.svg"
-                alt="Кнопка закрытия формы регистрации"
-                class="popup__submit-btn popup__submit-btn_action_close"
-              />
-              <form action="#" class="popup__form">
-                <fieldset class="popup__fullname-area">
-                  <h2 class="popup__title">Редактировать профиль</h2>
-                  <input
-                    type="text"
-                    class="popup__input-name popup__input"
-                    placeholder="Ваше имя"
-                    value="Жак-Ив Кусто"
-                  />
-                  <input
-                    type="text"
-                    class="popup__input-about popup__input"
-                    placeholder="О вас"
-                    value="Исследователь океана"
-                  />
-                  <button
-                    type="submit"
-                    class="popup__submit-btn popup__submit-btn_action_add"
-                  >
-                    Сохранить
-                  </button>
-                </fieldset>
-              </form>
-            </div>
-          </div>
         </section>
 
         <section class="photo-gallery photo-gallery_theme_position">
           <div class="card">
             <img
               src="./images/item.jpg"
-              alt="Фото в профиле"
+              alt="Фото в профиле Карачаевск"
               class="card__image"
             />
+            <!-- попытка сделать похожий альт на автоматизированный с использованием js, ведь в соц сети пользователь не может задавать альт -->
             <div class="card__footer">
               <h2 class="card__title">Карачаевск</h2>
               <img
@@ -93,7 +61,7 @@
           <div class="card">
             <img
               src="./images/item1.jpg"
-              alt="Фото в профиле"
+              alt="Фото в профиле Гора Эльбрус"
               class="card__image"
             />
             <div class="card__footer">
@@ -108,7 +76,7 @@
           <div class="card">
             <img
               src="./images/item4.jpg"
-              alt="Фото в профиле"
+              alt="Фото в профиле Домбай"
               class="card__image"
             />
             <div class="card__footer">
@@ -123,7 +91,7 @@
           <div class="card">
             <img
               src="./images/item3.jpg"
-              alt="Фото в профиле"
+              alt="Фото в профиле Гора Эльбрус"
               class="card__image"
             />
             <div class="card__footer">
@@ -138,7 +106,7 @@
           <div class="card">
             <img
               src="./images/item2.jpg"
-              alt="Фото в профиле"
+              alt="Фото в профиле Домбай"
               class="card__image"
             />
             <div class="card__footer">
@@ -153,7 +121,7 @@
           <div class="card">
             <img
               src="./images/item5.jpg"
-              alt="Фото в профиле"
+              alt="Фото в профиле Карачаево-Черкесия "
               class="card__image"
             />
             <div class="card__footer">
@@ -171,7 +139,40 @@
       <footer class="footer footer_theme_position">
         <p class="footer__copyright">&#169; 2022 Данюк Максим</p>
       </footer>
+
+      <div class="popup">
+        <div class="popup__container">
+          <img
+            src="./images/close-icon.svg"
+            alt="Кнопка закрытия формы регистрации"
+            class="popup__submit-btn popup__submit-btn_action_close"
+          />
+          <form action="#" class="popup__form">
+            <fieldset class="popup__fullname-area">
+              <h2 class="popup__title">Редактировать профиль</h2>
+              <input
+                type="text"
+                class="popup__input-name popup__input"
+                placeholder="Ваше имя"
+                value="Жак-Ив Кусто"
+              />
+              <input
+                type="text"
+                class="popup__input-about popup__input"
+                placeholder="О вас"
+                value="Исследователь океана"
+              />
+              <button
+                type="submit"
+                class="popup__submit-btn popup__submit-btn_action_add"
+              >
+                Сохранить
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
     </div>
-    <script src="/index.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

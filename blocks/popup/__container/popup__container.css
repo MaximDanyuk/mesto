@@ -1,5 +1,4 @@
 .popup__container {
-  position: fixed;
   transform: translate(-50%, -50%);
   top: 46%;
   left: 50%;
@@ -10,6 +9,7 @@
   border-radius: 10px;
   z-index: 101;
   opacity: 1;
+  position: relative;
 }
 
 @media (max-width: 650px) {
