@@ -31,6 +31,6 @@
 
 @media (max-width: 320px) {
   .page {
-    padding: 28px 19px 36px 19px;
+    padding: 28px 0 36px 0;
   }
 }

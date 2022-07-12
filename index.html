@@ -13,7 +13,6 @@
         <a href="#"
           ><img src="./images/logo.svg" alt="Логотип Место" class="logo"
         /></a>
-        <div class="header__line"></div>
       </header>
 
       <main class="content">
@@ -26,17 +25,18 @@
           <div class="profile__info">
             <div class="profile__wrapper">
               <h1 class="profile__name">Жак-Ив Кусто</h1>
-              <img
-                src="./images/edit-button.svg"
-                alt="Кнопка добавления фотографий"
-                class="profile__image-edit"
-                tabindex="0"
-              />
+              <button class="profile__image-edit" tabindex="0" type="submit">
+                <img
+                  src="./images/edit-button.svg"
+                  alt="Кнопка добавления фотографий"
+                />
+              </button>
             </div>
             <p class="profile__about">Исследователь океана</p>
           </div>
           <button
-            class="profile__submit-btn profile__submit-btn_action_add"
+            class="profile__submit-btn"
+            aria-label="Изменить имя"
           ></button>
         </section>
 
@@ -47,7 +47,7 @@
               alt="Фото в профиле Карачаевск"
               class="card__image"
             />
-            <!-- попытка сделать похожий альт на автоматизированный с использованием js, ведь в соц сети пользователь не может задавать альт -->
+
             <div class="card__footer">
               <h2 class="card__title">Карачаевск</h2>
               <img
@@ -142,29 +142,38 @@
 
       <div class="popup">
         <div class="popup__container">
-          <img
-            src="./images/close-icon.svg"
-            alt="Кнопка закрытия формы регистрации"
-            class="popup__submit-btn popup__submit-btn_action_close"
-          />
-          <form action="#" class="popup__form">
+          <button
+            class="popup__btn-close"
+            aria-label="Закрыть редактор имени"
+            type="submit"
+          >
+            <img
+              src="./images/close-icon.svg"
+              alt="Кнопка закрытия редактора имени"
+            />
+          </button>
+
+          <form action="#" class="popup__form" name="form">
             <fieldset class="popup__fullname-area">
               <h2 class="popup__title">Редактировать профиль</h2>
               <input
                 type="text"
-                class="popup__input-name popup__input"
+                class="popup__input"
                 placeholder="Ваше имя"
-                value="Жак-Ив Кусто"
+                name="popup__input-name"
+                required
               />
               <input
                 type="text"
-                class="popup__input-about popup__input"
+                class="popup__input"
                 placeholder="О вас"
-                value="Исследователь океана"
+                name="popup__input-about"
+                required
               />
               <button
                 type="submit"
-                class="popup__submit-btn popup__submit-btn_action_add"
+                class="popup__btn-add"
+                aria-label="Сохранить"
               >
                 Сохранить
               </button>

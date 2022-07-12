@@ -18,7 +18,7 @@
 }
 
 .profile__submit-btn::before {
-  content: " ";
+  content: ' ';
   background-image: url(../../../images/mark.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -58,5 +58,11 @@
     height: 15px;
     top: 13px;
     left: 127px;
+  }
+}
+
+@media (max-width: 320px) {
+  .profile__submit-btn {
+    margin-bottom: 0;
   }
 }

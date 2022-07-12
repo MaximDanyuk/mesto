@@ -1,9 +1,0 @@
-.profile_theme_position {
-  margin-top: 40px;
-}
-
-@media (max-width: 650px) {
-  .profile_theme_position {
-    margin-top: 38px;
-  }
-}

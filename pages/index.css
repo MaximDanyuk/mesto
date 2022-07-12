@@ -1,7 +1,7 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
 @import url(../blocks/card/__footer/card__footer.css);
-@import url(../blocks/card/__heart/_condition/card__heart_condition_active.css);
+@import url(../blocks/card/__heart/_active/card__heart_active.css);
 @import url(../blocks/card/__heart/card__heart.css);
 @import url(../blocks/card/__image/card__image.css);
 @import url(../blocks/card/__title/card__title.css);
@@ -13,19 +13,17 @@
 @import url(../blocks/header/header.css);
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/page/page.css);
-@import url(../blocks/photo-gallery/_theme/photo-gallery_theme_position.css);
 @import url(../blocks/photo-gallery/photo-gallery.css);
+
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/__fullname-area/popup__fullname-area.css);
-@import url(../blocks/popup/__input-about/popup__input-about.css);
-@import url(../blocks/popup/__input-name/popup__input-name.css);
 @import url(../blocks/popup/__input/popup__input.css);
-@import url(../blocks/popup/__submit-btn/_action/popup__submit-btn_action_add.css);
-@import url(../blocks/popup/__submit-btn/_action/popup__submit-btn_action_close.css);
+@import url(../blocks/popup/__btn-add/popup__btn-add.css);
+@import url(../blocks/popup/__btn-close/popup__btn-close.css);
 @import url(../blocks/popup/__title/popup__title.css);
-@import url(../blocks/popup/__submit-btn/popup__submit-btn.css);
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
+
 @import url(../blocks/root/root.css);
 @import url(../blocks/profile/__about/profile__about.css);
 @import url(../blocks/profile/__avatar/profile__avatar.css);
@@ -34,5 +32,4 @@
 @import url(../blocks/profile/__name/profile__name.css);
 @import url(../blocks/profile/__submit-btn/profile__submit-btn.css);
 @import url(../blocks/profile/__wrapper/profile__wrapper.css);
-@import url(../blocks/profile/_theme/profile_theme_position.css);
 @import url(../blocks/profile/profile.css);
