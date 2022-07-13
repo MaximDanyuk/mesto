@@ -1,7 +1,6 @@
 .profile__info {
   margin: 22px 0 25px 30px;
   box-sizing: border-box;
-  max-height: 73px;
 }
 
 @media (max-width: 768px) {

@@ -1,0 +1,11 @@
+.popup__image {
+  height: 32px;
+  width: 32px;
+}
+
+@media (max-width: 650px) {
+  .popup__image {
+    height: 20px;
+    width: 20px;
+  }
+}

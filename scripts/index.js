@@ -3,8 +3,7 @@ let editButton = document.querySelector('.profile__image-edit');
 let closeButton = document.querySelector('.popup__btn-close');
 let popup = document.querySelector('.popup');
 
-function popupOpen(evt) {
-  evt.preventDefault();
+function popupOpen() {
   popup.classList.add('popup_opened');
   firstName.value = profileName.textContent;
   lastName.value = profileAbout.textContent;
@@ -12,16 +11,15 @@ function popupOpen(evt) {
 
 editButton.addEventListener('click', popupOpen);
 
-function popupClose(evt) {
-  evt.preventDefault();
+function popupClose() {
   popup.classList.remove('popup_opened');
 }
 
 closeButton.addEventListener('click', popupClose);
 
 /* Переменные инпутов попапа, формы и кнопки */
-let firstName = document.querySelector('.popup__input-name');
-let lastName = document.querySelector('.popup__input-about');
+let firstName = document.querySelector('.popup__input_type_name');
+let lastName = document.querySelector('.popup__input_type_about');
 
 let popupForm = document.querySelector('.popup__form');
 

@@ -1,9 +1,9 @@
 .popup__btn-close {
   position: absolute;
-  height: 20px;
-  width: 20px;
-  top: -27px;
-  right: -26px;
+  height: 32px;
+  width: 32px;
+  top: -40px;
+  right: -40px;
   cursor: pointer;
   transition: 0.5s;
   background-color: transparent;
