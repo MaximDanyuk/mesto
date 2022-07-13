@@ -20,8 +20,8 @@ function popupClose(evt) {
 closeButton.addEventListener('click', popupClose);
 
 /* Переменные инпутов попапа, формы и кнопки */
-let firstName = document.querySelector('.popup__input-name_theme_position');
-let lastName = document.querySelector('.popup__input-about_theme_position');
+let firstName = document.querySelector('.popup__input-name');
+let lastName = document.querySelector('.popup__input-about');
 
 let popupForm = document.querySelector('.popup__form');
 
