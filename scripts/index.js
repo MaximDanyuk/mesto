@@ -1,5 +1,5 @@
 /* Переменные для попапа */
-let editButton = document.querySelector('.profile__image-edit');
+let editButton = document.querySelector('.profile__bio-edit');
 let closeButton = document.querySelector('.popup__btn-close');
 let popup = document.querySelector('.popup');
 
