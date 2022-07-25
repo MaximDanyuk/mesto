@@ -10,10 +10,6 @@
   opacity: 0.5;
 }
 
-.card__heart:active {
-  fill: #000;
-}
-
 @media (max-width: 1120px) {
   .card__heart {
     width: 19px;

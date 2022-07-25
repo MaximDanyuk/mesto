@@ -1,0 +1,25 @@
+.full-size__btn-close {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  top: -40px;
+  right: -40px;
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.full-size__btn-close:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 650px) {
+  .full-size__btn-close {
+    height: 20px;
+    width: 20px;
+    top: -36px;
+    right: 0;
+  }
+}

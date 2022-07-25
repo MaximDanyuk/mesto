@@ -55,7 +55,7 @@
         </section>
 
         <section class="photo-gallery">
-          <div class="card">
+          <!--           <div class="card">
             <img
               src="./images/item.jpg"
               alt="Фото в профиле Карачаевск"
@@ -73,6 +73,13 @@
                 />
               </button>
             </div>
+            <button type="button" class="card__remove-button">
+              <img
+                src="./images/trash.svg"
+                alt="Кнопка удаления карточек"
+                class="card__remove-image"
+              />
+            </button>
           </div>
 
           <div class="card">
@@ -81,8 +88,10 @@
               alt="Фото в профиле Гора Эльбрус"
               class="card__image"
             />
+
             <div class="card__footer">
               <h2 class="card__title">Гора Эльбрус</h2>
+
               <button type="button" class="card__button">
                 <img
                   src="./images/heart.svg"
@@ -91,15 +100,25 @@
                 />
               </button>
             </div>
+            <button type="button" class="card__remove-button">
+              <img
+                src="./images/trash.svg"
+                alt="Кнопка удаления карточек"
+                class="card__remove-image"
+              />
+            </button>
           </div>
+
           <div class="card">
             <img
               src="./images/item4.jpg"
               alt="Фото в профиле Домбай"
               class="card__image"
             />
+
             <div class="card__footer">
               <h2 class="card__title">Домбай</h2>
+
               <button type="button" class="card__button">
                 <img
                   src="./images/heart.svg"
@@ -108,15 +127,25 @@
                 />
               </button>
             </div>
+            <button type="button" class="card__remove-button">
+              <img
+                src="./images/trash.svg"
+                alt="Кнопка удаления карточек"
+                class="card__remove-image"
+              />
+            </button>
           </div>
+
           <div class="card">
             <img
               src="./images/item3.jpg"
               alt="Фото в профиле Гора Эльбрус"
               class="card__image"
             />
+
             <div class="card__footer">
               <h2 class="card__title">Гора Эльбрус</h2>
+
               <button type="button" class="card__button">
                 <img
                   src="./images/heart.svg"
@@ -125,15 +154,25 @@
                 />
               </button>
             </div>
+            <button type="button" class="card__remove-button">
+              <img
+                src="./images/trash.svg"
+                alt="Кнопка удаления карточек"
+                class="card__remove-image"
+              />
+            </button>
           </div>
+
           <div class="card">
             <img
               src="./images/item2.jpg"
               alt="Фото в профиле Домбай"
               class="card__image"
             />
+
             <div class="card__footer">
               <h2 class="card__title">Домбай</h2>
+
               <button type="button" class="card__button">
                 <img
                   src="./images/heart.svg"
@@ -142,15 +181,25 @@
                 />
               </button>
             </div>
+            <button type="button" class="card__remove-button">
+              <img
+                src="./images/trash.svg"
+                alt="Кнопка удаления карточек"
+                class="card__remove-image"
+              />
+            </button>
           </div>
+
           <div class="card">
             <img
               src="./images/item5.jpg"
               alt="Фото в профиле Карачаево-Черкесия "
               class="card__image"
             />
+
             <div class="card__footer">
               <h2 class="card__title">Карачаево-Черкесия</h2>
+
               <button type="button" class="card__button">
                 <img
                   src="./images/heart.svg"
@@ -159,7 +208,14 @@
                 />
               </button>
             </div>
-          </div>
+            <button type="button" class="card__remove-button">
+              <img
+                src="./images/trash.svg"
+                alt="Кнопка удаления карточек"
+                class="card__remove-image"
+              />
+            </button>
+          </div> -->
         </section>
       </main>
 
@@ -211,7 +267,92 @@
           </form>
         </div>
       </div>
+
+      <div class="popup popup_edit">
+        <div class="popup__container">
+          <button
+            class="popup__btn-close popup__btn-close_add-popup"
+            aria-label="Закрыть добавление фото"
+            type="button"
+          >
+            <img
+              src="./images/close-icon.svg"
+              alt="Кнопка закрытия добавления фото"
+              class="popup__image"
+            />
+          </button>
+
+          <form action="#" class="popup__form popup__form-add" name="form">
+            <fieldset class="popup__fullname-area">
+              <h2 class="popup__title">Новое место</h2>
+              <input
+                type="text"
+                class="popup__input popup__input_type_Addname"
+                placeholder="Название"
+                name="popup__input-name"
+                required
+                value="Название"
+              />
+              <input
+                type="text"
+                class="popup__input popup__input_type_Addabout"
+                placeholder="Ссылка на картинку"
+                name="popup__input-about"
+                required
+                value="Ссылка на картинку"
+              />
+              <button
+                type="submit"
+                class="popup__btn-add"
+                aria-label="Сохранить"
+              >
+                Сохранить
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+      <div class="full-size">
+        <figure class="full-size__wrapper">
+          <button
+            class="full-size__btn-close"
+            aria-label="Закрыть редактор имени"
+            type="button"
+          >
+            <img
+              src="./images/close-icon.svg"
+              alt="Кнопка закрытия редактора имени"
+              class="full-size__close-image"
+            />
+          </button>
+          <img class="full-size__image" src="./images/item2.jpg" alt="" />
+          <figcaption class="full-size__description">Текст</figcaption>
+        </figure>
+      </div>
+
+      <template id="tamlate-card">
+        <div class="card">
+          <img class="card__image" />
+          <img
+            src="./images/trash.svg"
+            alt="Кнопка удаления карточек"
+            class="card__remove-button"
+          />
+          <div class="card__footer">
+            <h2 class="card__title"></h2>
+
+            <button type="button" class="card__button">
+              <img
+                src="./images/heart.svg"
+                alt="иконка лайка"
+                class="card__heart"
+              />
+            </button>
+          </div>
+        </div>
+      </template>
     </div>
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/index.js" defer></script>
   </body>
 </html>

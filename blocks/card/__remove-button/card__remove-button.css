@@ -1,0 +1,25 @@
+.card__remove-button {
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  transition: 0.5s;
+  border: none;
+  z-index: 3;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 18px;
+  height: 19px;
+}
+
+.card__remove-button:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 1120px) {
+  .card__remove-button {
+    top: 18px;
+    right: 18px;
+  }
+}
