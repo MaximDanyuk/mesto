@@ -1,10 +1,10 @@
-.full-size__close-image {
+.popup__close-image {
   height: 32px;
   width: 32px;
 }
 
 @media (max-width: 650px) {
-  .full-size__close-image {
+  .popup__close-image {
     height: 20px;
     width: 20px;
   }
