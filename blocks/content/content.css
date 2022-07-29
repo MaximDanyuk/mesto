@@ -1,0 +1,6 @@
+.content {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+/* Теперь если нет карточек, футер не прилипает к аве и имени  */
