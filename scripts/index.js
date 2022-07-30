@@ -1,3 +1,5 @@
+/* Спасибо вам большое за проверку, все, что вы сказали сделать, удалить и добавить все понял, возникли неболльшие трудности, тк изначально не совсем понял логику, наставник чуть подсказал и я все сделал, спасаибо большое за комментарии и вашу работу!) */
+
 /// Архив
 const initialCards = [
   {
@@ -50,10 +52,6 @@ function closePopup(popup) {
   popup.classList.remove('popup_opened');
 }
 
-popupProfileOpenButton.addEventListener('click', () => {
-  openPopup(popupProfile);
-});
-
 popupProfileСloseButton.addEventListener('click', () => {
   closePopup(popupProfile);
 });
@@ -84,10 +82,19 @@ function submitProfileForm(evt) {
   evt.preventDefault();
   profileName.textContent = firstName.value;
   profileAbout.textContent = lastName.value;
-  popupProfile.classList.remove('popup_opened');
 }
 
 popupFormEdit.addEventListener('submit', submitProfileForm);
+
+/// close fullSize
+const fullSize = document.querySelector('.popup_full-size');
+const imageDescription = document.querySelector('.popup__description');
+const fullSizeImage = document.querySelector('.popup__full-size-image');
+const closeFullImage = document.querySelector('.popup__close-image'); /// close fullSize
+
+closeFullImage.addEventListener('click', () => {
+  closePopup(fullSize);
+});
 
 /// создание карточек
 const photoGallery = document.querySelector('.photo-gallery');
@@ -104,8 +111,6 @@ function createPhoto(imageValue, titleValue) {
   cardImage.src = imageValue; ///
   cardTitle.textContent = titleValue; ///
 
-  addPopup.classList.remove('popup_opened'); /// close after press
-
   const trash = card.querySelector('.card__remove-button'); /// trash
   trash.addEventListener('click', function (evt) {
     const eventTarget = evt.target;
@@ -119,9 +124,6 @@ function createPhoto(imageValue, titleValue) {
   });
 
   /// popup image
-  const fullSize = document.querySelector('.popup_full-size');
-  const fullSizeImage = document.querySelector('.popup__full-size-image');
-  const imageDescription = document.querySelector('.popup__description');
 
   cardImage.addEventListener('click', () => {
     openPopup(fullSize);
@@ -131,12 +133,6 @@ function createPhoto(imageValue, titleValue) {
     fullSizeImage.alt = cardImage.alt;
     fullSizeImage.src = cardImage.src;
     imageDescription.textContent = cardTitle.textContent;
-    openPopup(fullSize);
-  });
-
-  const closeFullImage = document.querySelector('.popup__close-image');
-  closeFullImage.addEventListener('click', () => {
-    closePopup(fullSize);
   });
 
   return card;
@@ -148,19 +144,11 @@ const placeName = document.querySelector('.popup__input_type_Addname'); /// titl
 const photoLink = document.querySelector('.popup__input_type_Addabout'); /// image second form
 popupFormAdd.addEventListener('submit', function (evt) {
   evt.preventDefault();
-  createPhoto(photoLink.value, placeName.value);
   renderCard(createPhoto(photoLink.value, placeName.value), photoGallery);
+  addPopup.classList.remove('popup_opened'); /// close after press
   placeName.value = '';
   photoLink.value = '';
 });
-
-/// Работа с массивом
-function createInitialCards() {
-  initialCards.forEach(function (item) {
-    createPhoto(item.link, item.name);
-  });
-}
-//////////////////////////////////////////////////////
 
 /// функция добавление карточки в глобал скопе
 function renderCard(card, container) {
@@ -171,5 +159,3 @@ function renderCard(card, container) {
 initialCards.forEach(function (item) {
   renderCard(createPhoto(item.link, item.name), photoGallery);
 });
-
-createInitialCards();
