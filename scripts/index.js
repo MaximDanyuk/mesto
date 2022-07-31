@@ -1,5 +1,3 @@
-/* Спасибо вам большое за проверку, все, что вы сказали сделать, удалить и добавить все понял, возникли неболльшие трудности, тк изначально не совсем понял логику, наставник чуть подсказал и я все сделал, спасаибо большое за комментарии и вашу работу!) */
-
 /// Архив
 const initialCards = [
   {
@@ -38,7 +36,7 @@ const popupProfileСloseButton = document.querySelector('.popup__btn-close');
 const popupProfile = document.querySelector('.popup_profile');
 /// Переменные для попапа 2
 const addButton = document.querySelector('.profile__edit-button');
-const addPopup = document.querySelector('.popup_edit');
+const popupAddCard = document.querySelector('.popup_edit');
 const addPopupCloseButton = document.querySelector(
   '.popup__btn-close_add-popup'
 );
@@ -57,11 +55,11 @@ popupProfileСloseButton.addEventListener('click', () => {
 });
 
 addButton.addEventListener('click', () => {
-  openPopup(addPopup);
+  openPopup(popupAddCard);
 });
 
 addPopupCloseButton.addEventListener('click', () => {
-  closePopup(addPopup);
+  closePopup(popupAddCard);
 });
 
 popupProfileOpenButton.addEventListener('click', () => {
@@ -74,7 +72,7 @@ popupProfileOpenButton.addEventListener('click', () => {
 
 /* Переменные инпутов попапа, формы и кнопки, отправка первого попапа */
 
-const popupFormEdit = document.querySelector('.popup__form');
+const popupFormEdit = popupProfile.querySelector('.popup__form');
 const profileName = document.querySelector('.profile__name');
 const profileAbout = document.querySelector('.profile__about');
 
@@ -82,6 +80,7 @@ function submitProfileForm(evt) {
   evt.preventDefault();
   profileName.textContent = firstName.value;
   profileAbout.textContent = lastName.value;
+  closePopup(popupProfile);
 }
 
 popupFormEdit.addEventListener('submit', submitProfileForm);
@@ -145,7 +144,7 @@ const photoLink = document.querySelector('.popup__input_type_Addabout'); /// ima
 popupFormAdd.addEventListener('submit', function (evt) {
   evt.preventDefault();
   renderCard(createPhoto(photoLink.value, placeName.value), photoGallery);
-  addPopup.classList.remove('popup_opened'); /// close after press
+  closePopup(popupAddCard); /// close after press
   placeName.value = '';
   photoLink.value = '';
 });
@@ -155,7 +154,7 @@ function renderCard(card, container) {
   container.prepend(card);
 }
 
-/// функция добавление карточки в локал скопе
+/// Создаем карточку + добавляем в начало
 initialCards.forEach(function (item) {
   renderCard(createPhoto(item.link, item.name), photoGallery);
 });
